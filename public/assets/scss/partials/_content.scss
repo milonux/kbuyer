@@ -1,0 +1,137 @@
+/* MAIN CONTENT
+************************************************** */
+#content {
+    padding: 2.5rem 0;
+}
+
+
+.b-card-info {
+    .pro-name {
+        line-height: 1.1;
+    }
+}
+.page-header {
+	.ant-breadcrumb {
+		margin-bottom: .5rem;
+	}
+	.header-title {
+		font-size: 2rem;
+		margin-top: 0;
+		margin-bottom: 1.25rem;
+	}
+}
+
+.k-filters {
+	margin-bottom: 1.5rem;
+}
+
+.k-label-has-tooltip {	
+	.anticon {
+		vertical-align: middle !important;
+		margin-left: 4px;
+	}
+}
+.has-overlay-link {
+	position: relative;
+	.overlay-link {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+}
+
+.k-form-view-item {
+	margin-bottom: 18px;
+	.k-view-item-label {
+		@extend %fw-semibold;
+	}
+}
+.k-user-bio-image {
+	width: 100%;
+	max-width: 150px;
+	padding: 0;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+
+	&:before {
+		display: block;
+		content: " ";
+		padding-top: 100%;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		display: block;
+	}
+	@media (min-width: 1200px) {
+		max-width: 170px;
+	}
+}
+.k-user-bio-section-divider {
+	border-bottom: 1px solid $border-color-dark;
+	margin-top: 2rem;
+	margin-bottom: .75rem;
+	padding-bottom: .5rem;
+	.divider-title {
+		margin-bottom: 0;
+	}
+}
+.k-user-bio-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+}
+.k-user-bio-name {
+	color: $color-primary;
+	margin-bottom: 0;
+}
+.k-user-bio-expriences {
+	font-size: 1.25rem;
+}
+
+.k-view-group {
+	margin-bottom: 1rem;
+	.k-view-label {
+
+	}
+	.k-view-desc-note {
+		position: relative;
+		padding-left: .5rem;
+	}
+	.k-view-desc-clone {
+		position: absolute;
+		left: 0;
+	}
+	.k-view-desc-note-text {
+
+	}
+}
+
+.k-user-bio-extend-information {
+	border-top: 1px solid $border-color-dark;
+	margin-top: 3rem;
+	.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+		font-size: 1.5rem;
+		color: $color-heading;
+		padding-left: 0;
+		line-height: initial;
+		@extend %fw-semibold;
+
+		.arrow {
+			left: auto;
+			right: 16px;
+			font-size: 18px;
+		}
+	}
+}

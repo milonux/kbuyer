@@ -1,0 +1,54 @@
+.home-onboarding-col {
+	&:not(:last-child) {
+		border-right: 1px solid $border-color;
+	}
+}
+.home-onboarding-slider {
+	.slick-slide {
+		border-right: 1px solid $border-color;
+	}
+}
+.home-onboarding-card {
+	padding: 1rem 0;
+	text-align: center;
+}
+.home-onboarding-card-image {
+	width: 144px;
+	height: 144px;
+	margin-left: auto;
+	margin-right: auto;
+	img {
+		height: 100%;
+	    width: 100%;
+	    object-fit: contain;
+	}
+}
+.home-onboarding-card-title {
+	margin-top: .75rem;
+	margin-bottom: .75rem;
+}
+.drawer-notifications {
+	.ant-drawer-header {
+		background-color: $color-cyan;
+		border-radius: 0;
+		padding-top: 20px;
+    	padding-bottom: 20px;
+	}
+	.ant-drawer-title {
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: $white;
+	}
+	.ant-drawer-body {
+		padding: 0;
+	}
+	.ant-list-item {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.ant-list-item-meta-title, .ant-list-item-meta-description {
+		line-height: initial;
+    	font-size: initial;
+	}
+}
+

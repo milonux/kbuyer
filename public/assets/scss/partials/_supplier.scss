@@ -1,0 +1,72 @@
+.b-propic {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+	&:before {
+		display: block;
+		content: "";
+		padding-top: 100%;
+	}	
+	&:after {
+		display: block;
+		clear: both;
+		content: "";
+	}
+	img {
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 6px;
+	}
+}
+
+.k-card-profile {
+	.pro-name {
+		margin-top: 1rem;
+	}
+	.k-list-inline {
+		margin-top: 20px;
+		margin-left: -10px;
+		margin-right: -10px;
+		li {
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+	}
+}
+
+.k-buyer-meta-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		&:before {
+			display: inline-block;
+			content: " / ";
+			margin-left: 12px;
+			margin-right: 12px;
+			opacity: .75;
+		}
+		&:first-child {
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+.kb-hero {
+	text-align: center;
+	padding-bottom: 30px;
+	img {
+		margin-bottom: 20px
+	}
+}

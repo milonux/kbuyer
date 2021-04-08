@@ -1,0 +1,18 @@
+.ant-popover, .ant-form, .ant-form-item, .ant-form label, .ant-input {
+	font-size: inherit;
+    font-family: inherit;
+}
+.ant-breadcrumb {
+	a {
+		&:hover, &:focus {
+			color: $color-primary;
+		}
+	}
+}
+
+
+.k-form-label-align-left {
+	.ant-form-item-label {
+		text-align: left;
+	}
+}

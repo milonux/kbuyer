@@ -1,0 +1,101 @@
+/* BUTTONS
+*************************************************** */
+.ant-btn {
+	font-size: $fs-base;
+}
+.btn-base {
+	padding: .75rem 1rem;
+}
+.k-button-default {
+	@include base-button-variant($color-text, #fff, #d9d9d9);
+}
+.k-btn-gray {
+	background-color: #d9d9d9;
+}
+.ant-btn-primary {
+	@include base-button-variant(#fff, $color-primary, $color-primary);
+}
+[class*="btn-link-"] {
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+	border-radius: 0;
+	padding: 0;
+	height: auto;
+	.anticon + span {
+		margin-left: 4px;
+	}
+	span + .anticon {
+		margin-left: 4px;
+	}
+	&:hover, &:focus {
+		background-color: transparent !important;
+		box-shadow: none !important;
+	}	
+}
+.btn-link-primary {
+	color: $color-primary;
+	&:hover, &:focus {
+		color: darken($color-primary, 10%);
+		background-color: transparent !important;
+		box-shadow: none !important;
+	}
+	&.ant-btn-clicked {
+		&:after {
+			display: none;
+		}
+	}
+}
+.btn-link-static[ant-click-animating-without-extra-node]:after,
+.btn-link-static.ant-click-animating-node,
+.btn-link-primary[ant-click-animating-without-extra-node]:after,
+.btn-link-primary.ant-click-animating-node {
+	display: none;
+}
+.btn-link-static {
+	color: $color-cyan;
+	&:hover, &:focus {
+		color: darken($color-cyan, 10%);
+	}
+}
+
+
+
+.btn-second {
+	@include base-button-variant(#fff, $color-secondary, $color-secondary);
+}
+.btn-white {
+	@include base-button-variant(#333, #fff, #fff);
+}
+
+
+.ant-btn-background-ghost.ant-btn-primary {
+	border-color: $color-primary;
+	color: $color-primary;
+}
+.ant-btn-background-ghost.ant-btn-primary:hover, .ant-btn-background-ghost.ant-btn-primary:focus {
+	border-color: darken($color-primary, 10%);
+	color: darken($color-primary, 10%);
+}
+
+
+
+
+.ant-btn-clicked:after {
+	border-color: $color-primary;
+}
+
+
+
+.k-button {
+    text-transform: uppercase;
+}
+.k-buttons {
+    margin-left: -4px;
+    margin-right: -4px;
+}
+.k-buttons .ant-btn, .k-buttons .ant-btn {
+   margin: 4px;
+}
+
+
